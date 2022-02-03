@@ -19,9 +19,9 @@ INSERT INTO `student` (`name`, `firstname`, `city`) VALUES ('Aube', 'Juan', 'Lyo
 * There must be 3 subjects with a coefficient greater than or equal to 1 
 * and at least one of which it is greater than 1
 */
-INSERT INTO `matter` (`codemat`, `coef`) VALUES ('sciences', '1');
-INSERT INTO `matter` (`codemat`, `coef`) VALUES ('maths', '2');
-INSERT INTO `matter` (`codemat`, `coef`) VALUES ('physics', '3');
+INSERT INTO matter (codemat, wording, coef) VALUES('maths', 'algebra, trigo', 2.0);
+INSERT INTO matter (codemat, wording, coef) VALUES('physics', 'thermodynamic', 3.0);
+INSERT INTO matter (codemat, wording, coef) VALUES('sciences', 'biology', 1.0);
 
 /*
 * 5 tests are required, 3 of which have the date between 1/1/2014 and 30/6/2014 (inclusive).
