@@ -7,13 +7,13 @@ USE notationStudentsDB;
 * It takes 7 students, including 3 in the same city and 3 whose names are: 
 * Dupont, Durand, and Martin. It also takes 2 cities whose name contains « LL »
 */
-INSERT INTO `student` (`name`, `city`) VALUES ('Dupont', 'Marseille');
-INSERT INTO `student` (`name`, `city`) VALUES ('Durant', 'Paris');
-INSERT INTO `student` (`name`, `city`) VALUES ('Martin', 'Séville');
-INSERT INTO `student` (`name`, `city`) VALUES ('Fahmi', 'Goussainville');
-INSERT INTO `student` (`name`, `city`) VALUES ('Reda', 'Paris');
-INSERT INTO `student` (`name`, `city`) VALUES ('Hammer', 'Paris');
-INSERT INTO `student` (`name`, `city`) VALUES ('Aube', 'Bordeaux');
+INSERT INTO `student` (`name`, `firstname`, `city`) VALUES ('Dupont', 'Bob', 'Marseille');
+INSERT INTO `student` (`name`, `firstname`, `city`) VALUES ('Durant', 'Alice', 'Paris');
+INSERT INTO `student` (`name`, `firstname`, `city`) VALUES ('Martin', 'Carol', 'Séville');
+INSERT INTO `student` (`name`, `firstname`, `city`) VALUES ('Fahmi', 'Samir', 'Goussainville');
+INSERT INTO `student` (`name`, `firstname`, `city`) VALUES ('Reda', 'Jean', 'Paris');
+INSERT INTO `student` (`name`, `firstname`, `city`) VALUES ('Hammer', 'Patrick', 'Paris');
+INSERT INTO `student` (`name`, `firstname`, `city`) VALUES ('Aube', 'Juan', 'Lyon');
 
 /*
 * There must be 3 subjects with a coefficient greater than or equal to 1 

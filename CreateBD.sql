@@ -1,12 +1,14 @@
---author: Samir FAHMI, date: 03/02/2022
---This is based on MySQL
+/*
+* author: Samir FAHMI, date: 03/02/2022
+* This is based on MySQL
+*/
 DROP DATABASE IF EXISTS notationStudentsDB;
 CREATE DATABASE notationStudentsDB;
 USE notationStudentsDB;
 CREATE TABLE Student (
     numstud int PRIMARY KEY auto_increment,
     name varchar(20) NOT NULL,
-    firstName varchar(20),
+    firstname varchar(20),
     dateofbirth Date,
     street varchar(150),
     postalcod varchar(5),
