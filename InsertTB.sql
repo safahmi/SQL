@@ -1,4 +1,7 @@
 USE notationStudentsDB;
+/*
+* We are going to fill student, matter, test, notation tables 
+*/
 
 /*
 * It takes 7 students, including 3 in the same city and 3 whose names are: 
