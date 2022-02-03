@@ -1,4 +1,5 @@
 USE notationStudentsDB;
+
 /* List of all students */
 select * from student;
 
