@@ -1,4 +1,4 @@
-USE notationStudentsDB;
+use notationStudentsDB;
 
 /* List of all students */
 select * from student;

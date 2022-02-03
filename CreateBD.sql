@@ -2,12 +2,14 @@
 * author: Samir FAHMI, date: 03/02/2022
 * This is based on MySQL
 */
-DROP DATABASE IF EXISTS notationStudentsDB;
-CREATE DATABASE notationStudentsDB;
-USE notationStudentsDB;
-CREATE TABLE Student (
-    numstud int PRIMARY KEY auto_increment,
-    name varchar(20) NOT NULL,
+
+drop database if exists notationStudentsDB;
+create database notationStudentsDB;
+use notationStudentsDB;
+
+create table Student (
+    numstud int primary key auto_increment,
+    name varchar(20) not null,
     firstname varchar(20),
     dateofbirth Date,
     street varchar(150),
@@ -15,27 +17,27 @@ CREATE TABLE Student (
     city varchar(20)
 );
 
-CREATE TABLE Matter (
-    codemat varchar(20) PRIMARY KEY,
+create table Matter (
+    codemat varchar(20) primary key,
     wording varchar(255),
     coef float
 );
 
-CREATE TABLE Test (
-    numtest int PRIMARY KEY auto_increment,
-    testdate Date,
+create table Test (
+    numtest int primary key auto_increment,
+    testdate date,
     place varchar(150),
     codemat varchar(20), 
-	FOREIGN KEY (codemat) REFERENCES  Matter(codemat)
+	foreign key (codemat) references  Matter(codemat)
 
 );
 
-CREATE TABLE Notation (
+create table Notation (
     numstud int,
-    FOREIGN KEY (numstud) REFERENCES Student(numstud),
+    foreign key (numstud) references Student(numstud),
     numtest int,
-    FOREIGN KEY (numtest) REFERENCES Test(numtest),
-    score float NOT NULL,
-    PRIMARY KEY (numstud, numtest)
+    foreign key (numtest) references Test(numtest),
+    score float not null,
+    primary key (numstud, numtest)
 );
 

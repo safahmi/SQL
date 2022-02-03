@@ -1,4 +1,4 @@
-USE notationStudentsDB;
+use notationStudentsDB;
 
 /* Total number of tests */
 select count(numtest) as nbtest 
@@ -65,7 +65,7 @@ group by m.wording;
 
 /* Average of score obtained in the tests (indicate the number of the test) where less than 6 students
 were rated */
-select n.numtest, avg(n.score)
+select n.numtest, avg(n.score) as testscore
 from notation n
 group by n.numtest 
 having count(n.numstud) < 6;
